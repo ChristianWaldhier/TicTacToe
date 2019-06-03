@@ -127,7 +127,7 @@ def runGame():
         printboard(board)
 
         startingPlayer = input("Do you want to start? (Y/N)")
-        if startingPlayer == "y":
+        if startingPlayer == "y" or "Y":
             print()
             print("Good luck!")
             print()
@@ -182,6 +182,6 @@ def runGame():
             round +=1
             printboard(board)
     finally:
-        if input("New game? y/n")=="y":
+        if input("New game? (Y/N)")=="y" or "Y":
             runGame()           
 runGame()
